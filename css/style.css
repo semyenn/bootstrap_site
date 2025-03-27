@@ -170,26 +170,8 @@
     border-color: var(--color3);
 }
 
-.sidebar .mode .fire-water{
-    height: 50px;
-    width: 60px;
-    display: flex;
-    align-items: center;
-}
-
 .sidebar .mode i{
     position: absolute;
-}
-
-.sidebar .mode i.fire{
-    opacity: 0;
-}
-
-.sidebar .mode .theme-switch{
-    z-index: 3;
-    height: 100%;
-    min-width: 60px;
-    background: red;
 }
 
 .sidebar .mode i:hover{
@@ -577,6 +559,27 @@ footer .video-bg::before {
     color: var(--color-text);
     margin: 0;
     filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+header h1 {
+    position: relative;
+    font-family: Geologica Bold;
+    margin-top: 20vh; /* Уменьшил отступ сверху для мобильных устройств */
+    font-size: clamp(2rem, 8vw, 4.5rem); /* Адаптивный размер шрифта */
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-text);
+    z-index: 2;
+    padding: 0 1rem; /* Добавил боковые отступы */
+    box-sizing: border-box; /* Учитываем padding в ширине */
+    word-wrap: break-word; /* Перенос длинных слов */
+    line-height: 1.2; /* Улучшенный межстрочный интервал */
+    max-width: 100%; /* Гарантируем, что текст не выйдет за пределы экрана */
+}
+
+.about#types h2{
+    font-size: 2rem;
+
 }
 
 /* Адаптивность */
