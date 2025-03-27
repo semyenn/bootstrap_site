@@ -5,40 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcun icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontello.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Pokemon Database</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark" data-bs-theme="dark">
-        <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Главная</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Навигация
-                    </a>
-                    <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#about">О нас</a></li>
-                    <li><a class="dropdown-item" href="#survey">Пройти опрос</a></li>
+    <nav class="sidebar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="video-bg">
+                    <video src="img/menu-video-bg.mp4" type="video/mp4" autoplay muted loop></video>
+                </div>
+                <div class="my_square">
+                    <i class="icon-menu toggle"></i>
+                </div>
+                <div class="nav-image-text">
+                    <h3 class="text-center text-uppercase animated-element">Pokemon Database</h3>
+                    <img src="img/logo.png" class="animated-element" alt="logo-img">
+                </div>
+            </div>
+            <div class="row">
+                <div class="menu-bar">
+                    <ul class="menu-links">
+                        <li class="nav-links">
+                            <a href="#">
+                                <i class="icon-home"></i>
+                                <h5 class="text-start animated-element">Главная</h5>
+                            </a>
+                            <a href="#">
+                                <i class="icon-types"></i>
+                                <h5 class="text-start animated-element">Типы покемонов</h5>
+                            </a>
+                            <a href="#">
+                                <i class="icon-team"></i>
+                                <h5 class="text-start animated-element">Ваша команда</h5>
+                            </a>
+                            <a href="#">
+                                <i class="icon-survey"></i>
+                                <h5 class="text-start animated-element">Пройти опрос</h5>
+                            </a>
+                            <a href="#">
+                                <i class="icon-about"></i>
+                                <h5 class="text-start animated-element">О нас</h5>
+                            </a>
+                            <a href="#">
+                                <i class="icon-survey"></i>
+                                <h5 class="text-start animated-element">Пройти опрос</h5>
+                            </a>
+                        </li>
                     </ul>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Типы покемонов</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Ваша команда</a>
-                </li>
-                </ul>
-                <form class="d-flex" role="login">
-                    <button class="btn btn-primary me-2">Зарегистрироваться</button>
-                    <button class="btn btn-secondary" type="submit">Поиск</button>
-                </form>
+
+                    <div class="bottom-menu">
+                        <div class="bottom-content">
+                            <li class="">
+                                <a href="#">
+                                    <i class="icon-login"></i>
+                                    <h5 class="text-start animated-element">Войти</h5>
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -125,7 +152,7 @@
                         <input type="text" class="form-control" id="inputAge" placeholder="Например, 18">
                     </div>
                     <div class="col-12">
-                        <label for="inputPokemon" class="form-label">Какрй ваш любимый покемон?</label>
+                        <label for="inputPokemon" class="form-label">Какой ваш любимый покемон?</label>
                         <input type="text" class="form-control" id="inputPokemon" placeholder="Например, Пикачу">
                     </div>
                     <div class="col-12">

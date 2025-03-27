@@ -33,3 +33,24 @@ function onEntry(entry) {
   for (let elm of elements) {
     observer.observe(elm);
   }
+
+// Добавьте этот код в ваш файл script.js
+document.addEventListener('DOMContentLoaded', function() {
+  const sidebar = document.querySelector('.sidebar');
+  const toggleButton = document.querySelector('.toggle');
+  let isSidebarVisible = false;
+
+  // Изначально скрываем sidebar за экраном
+  sidebar.style.right = '-320px';
+
+  toggleButton.addEventListener('click', function() {
+      if (isSidebarVisible) {
+          // Скрываем sidebar
+          sidebar.style.right = '-320px';
+      } else {
+          // Показываем sidebar
+          sidebar.style.right = '0';
+      }
+      isSidebarVisible = !isSidebarVisible;
+  });
+});
